@@ -30,6 +30,7 @@ Gather what's changed since the last refresh (check the date of the most recent 
 - **Monday.com** — the board item for this account/deal: status/stage column changes, custom signal columns, updates/comments, and timeline items. This is the primary source for custom signals and CRM-style structured data.
 - **Email (e.g. Gmail)** — recent threads with the account's contacts, and recent internal threads that mention the account, for both customer-facing and internal conversation context.
 - **Calendar** — recent and upcoming meetings with the account, to ground the timeline and catch upcoming decision points.
+- **Call notes/recordings (e.g. Pocket)** — transcripts, AI summaries, and action items from calls with the account. Search by account/company name and cross-reference against the meetings already found via Calendar so you don't miss a call that has no corresponding email thread. This is often the richest source of what was actually said (objections, commitments, sentiment) — prefer it over a secondhand recap when both exist.
 - **Docs/Drive** — recently modified or shared documents (proposals, contracts, notes) tied to this account.
 - **Enrichment/research tools (e.g. Clay)** — company and contact data points, and answers to account questions, when you need to fill a gap.
 - **Web search** — public information relevant to the deal: company news, funding, leadership changes, industry signals that could affect the deal.

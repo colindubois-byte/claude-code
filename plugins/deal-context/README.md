@@ -61,6 +61,7 @@ deals/
 - **Monday.com** — board item stage/status, custom signal columns, updates, timeline. The primary source for structured deal data and custom signals.
 - **Email** (e.g. Gmail) — customer and internal conversation threads.
 - **Calendar** — recent and upcoming meetings.
+- **Call notes/recordings** (e.g. Pocket) — transcripts, summaries, and action items from calls with the account.
 - **Docs/Drive** — proposals, contracts, notes tied to the account.
 - **Enrichment/research tools** (e.g. Clay) — company/contact data points.
 - **Web search** — public signals: news, funding, leadership changes.
