@@ -48,6 +48,17 @@
       "category": "productivity"
     },
     {
+      "name": "deal-context",
+      "description": "Persistent per-deal workspaces that aggregate CRM data, internal and customer conversations, web research, and Monday.com signals into a daily ranked action plan",
+      "version": "1.0.0",
+      "author": {
+        "name": "Colin Dubois",
+        "email": "colin.dubois@optyo.net"
+      },
+      "source": "./plugins/deal-context",
+      "category": "productivity"
+    },
+    {
       "name": "explanatory-output-style",
       "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
       "version": "1.0.0",
