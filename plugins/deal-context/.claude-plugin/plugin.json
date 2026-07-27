@@ -1,0 +1,9 @@
+{
+  "name": "deal-context",
+  "version": "1.0.0",
+  "description": "Persistent per-deal workspaces that aggregate CRM data, internal and customer conversations, web research, and Monday.com signals into a daily ranked action plan",
+  "author": {
+    "name": "Colin Dubois",
+    "email": "colin.dubois@optyo.net"
+  }
+}
