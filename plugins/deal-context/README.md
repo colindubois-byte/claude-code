@@ -13,6 +13,16 @@ Deal context is usually scattered: notes in the CRM, threads in email, signals i
 - **`/deal-refresh` (command, the coordinator)** — discovers every known account, launches `account-analyst` once per account in parallel batches, collects each one's recommendation, ranks them by urgency/momentum/value, writes the ranked plan to `deals/_daily-plan/`, and prints it.
 - **`/deal-init`** — scaffolds a new account's workspace (with a light Monday.com lookup if available) so the first refresh has something to build on.
 - **`/deal-status`** — a fast, read-only look at the latest plan or a single account's state, with no external calls.
+- **`/nurturer`** — keeps the "not now" pile warm. Scans Monday.com and Gmail for prospects with no contact in either direction for 90+ days, checks what's going on with each brand now, drafts one genuinely useful, non-pitchy message per person, and flags the ones to drop. Drafts are posted as one thread to a Google Chat space (via `scripts/post-to-chat.ps1`); nothing is ever sent to a prospect. Keeps `deals/_nurture/log.md` so the same people aren't resurfaced every week.
+
+### Nurturer setup
+
+1. In Google Chat, create a space (e.g. "Nurture"), then **Apps & integrations → Add webhooks**, and copy the webhook URL.
+2. Save the URL to `.claude/nurture-webhook.local` in the project that runs `/nurturer`, and gitignore that file — the URL contains a key.
+3. Copy `scripts/post-to-chat.ps1` to `.claude/scripts/` in that project.
+4. The Monday.com board IDs, column IDs, and owner ID in `commands/nurturer.md` are OPTYO's CRM workspace — change them for another workspace.
+
+Without a webhook, `/nurturer` falls back to writing `deals/_nurture/YYYY-MM-DD.md`.
 
 ## Workspace layout
 
@@ -88,4 +98,4 @@ Colin Dubois (colin.dubois@optyo.net)
 
 ## Version
 
-1.0.0
+1.1.0
