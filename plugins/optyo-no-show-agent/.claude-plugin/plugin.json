@@ -1,0 +1,9 @@
+{
+  "name": "optyo-no-show-agent",
+  "version": "1.0.0",
+  "description": "Finds new first discovery calls in monday.com and Google Calendar and drafts a timed pre-call email sequence (unsent Gmail drafts) to reduce no-shows",
+  "author": {
+    "name": "Colin Dubois",
+    "email": "colin.dubois@optyo.net"
+  }
+}
