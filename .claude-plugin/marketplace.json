@@ -59,6 +59,17 @@
       "category": "productivity"
     },
     {
+      "name": "optyo-no-show-agent",
+      "description": "Finds new first discovery calls in monday.com and Google Calendar and drafts a timed pre-call email sequence (unsent Gmail drafts) to reduce no-shows",
+      "version": "1.0.0",
+      "author": {
+        "name": "Colin Dubois",
+        "email": "colin.dubois@optyo.net"
+      },
+      "source": "./plugins/optyo-no-show-agent",
+      "category": "productivity"
+    },
+    {
       "name": "explanatory-output-style",
       "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
       "version": "1.0.0",
